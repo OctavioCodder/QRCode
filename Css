@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Inter:wght@300&family=Kanit:ital,wght@0,400;1,300&family=Lilita+One&family=Nunito:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&family=Press+Start+2P&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background: linear-gradient(90deg, #5B8FB9, #241663);
+}
+
+.principal{
+    height: 260px;
+    max-width: 410px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px 25px;
+    margin-top: 10%;
+    transition: height 0.3s ease-in-out;
+}
+
+.principal.ativar{
+    height: 530px;
+}
+
+header h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header p{
+    margin-top: 5px;
+    color: #191825;
+    font-size: 13px;
+}
+
+.principal .form{
+    margin: 20px 0 25px;
+}
+
+.form :where(input, button){
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.form input{
+    font-size: 13px;
+    padding: 0 17px;
+    border: 2px solid #B2B2B2;
+}
+
+.form button{
+    color: #000;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    background: #8758FF;
+    transition: 0.3s ease-in-out;
+}
+
+.form button:hover{
+    color: #fff;
+    background: #362367;
+}
+
+.principal .qrCode{
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+}
+
+.principal.ativar .qrCode{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
